@@ -1,0 +1,22 @@
+
+CREATE DATABASE aulas;
+
+CREATE TABLE alunos (
+  Id INTEGER PRIMARY KEY,
+  nome TEXT NOT NULL,
+  ufcd TEXT NOT NULL
+);
+
+
+INSERT INTO alunos VALUES (0001, 'yasmin', '10875');
+INSERT INTO alunos VALUES (0002, 'nuno', '10875');
+INSERT INTO alunos VALUES (0003, 'andre', '10875');
+INSERT INTO alunos VALUES (0004, 'gonçalo', '10875');
+
+SELECT * FROM alunos;
+
+UPDATE alunos
+SET nome = 'filipa'
+WHERE Id = 1;
+
+DELETE FROM alunos;
